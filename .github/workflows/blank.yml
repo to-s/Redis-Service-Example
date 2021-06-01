@@ -22,4 +22,5 @@ jobs:
         uses: actions/checkout@v1.2.0
       - name: List containers
         run: sudo docker ps
-        
+      - name: View docker redis log output
+        run: sudo ddocker logs redis
